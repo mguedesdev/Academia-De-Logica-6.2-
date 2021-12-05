@@ -15,6 +15,7 @@ Essa mentoria será divida em duas etapas:
 
 ## O que já vem pronto
 * Todo CSS  já está pronto, vamos dar um upgrade nele na próxima mentoria;
+* Todos os elementos necessários já estão sendo capturados dentro do script.js se atente a classe que cada elemento deve conter.
 * Já existem funções prontas como:
 	* Obter qual o quarto escolhido;
 	* Obter o número de pessoas;
@@ -33,40 +34,40 @@ Essa mentoria será divida em duas etapas:
 ### 2. Inicie um formulário que deve conter:
 
  * Uma `section` com a classe `hotel-form` para a reserva do hotel
-   * Adicione um `input` do tipo `data` para o Checkin
-   * Adicione um `input` do tipo `data` para o Chekout
+   * Adicione um `input` do tipo `data` para o Checkin com a classe `inputCheckin`
+   * Adicione um `input` do tipo `data` para o Chekout com a classe `inputCheckout`
 * Uma `section` com a classe `hotel-form` selecionarmos os tipos de quartos com
-	* Adicione um `input` do tipo `radio` para o quarto Comum
-	* Adicione um `input` do tipo `radio` para o quarto Club
-	* Adicione um `input` do tipo `radio` para o quarto Luxo
+	* Adicione um `input` do tipo `radio` para o quarto Comum com a classe `bedroom`
+	* Adicione um `input` do tipo `radio` para o quarto Club com a classe `bedroom`
+	* Adicione um `input` do tipo `radio` para o quarto Luxo com a classe `bedroom`
 	* Todos devem conter o mesmo `name`
 * Uma `section` com a classe `hotel-form` para a quantidade de pessoas
-	* Adicione um `select` com quatro `options` de 1 ao 4
+	* Adicione um `select` com quatro `options` de 1 ao 4 com a classe `nPessoas`
 * Uma `section` com a classe `hotel-form` para escrevermos alguma observação
-	* Adicione uma `textArea` com `placeholder` para indicar que é o campo de observações
-* Adicione um `botão` para enviarmos os dados que estiverem nos inputs
+	* Adicione uma `textArea` com `placeholder` para indicar que é o campo de observações com a classe `obs`
+* Adicione um `botão` com o id `submit-btn`
 
 ### 3. Lista de reservas
 * Faça uma `section` com a classe `list-section` para a lista de reservas
 	* Adicione um titulo 
 	* Adicione uma lista ordenada
-	* Adicione um botão para esvaziar a lista
+	* Adicione um botão com o id `clear-btn`
 
 ### 4. Adicionando os valores dos inputs na lista
-* Obtenha os valores de todos `inputs` restantes utilizando o DOM
 * Desenvolva uma função para criar uma `li` de forma dinâmica 
 * Sua `li` deve conter os valores dos `inputs` e ficar da seguinte forma:
 `Reserva para o dia xx/xx/xxxx até o dia xx/xx/xxxx`
 `Quarto x - Para x Pessoas - Obs: xxxx`
-* Esta `li` deve ser colocada dentro da `ol` 
-* Adicione um evento de click ao botão que deve receber essa função ao ser clicado
+`Obs: xxxxxx`
+* Esta `li` deve ser filha da `ol` 
+* Adicione um evento de click ao botão que deve receber essa função
 
 ### 5.Limpando a lista
 * Desenvolva uma função que deve limpar a lista
-* Adicione um evento de click ao botão limpar lista que deve receber essa função ao ser clicado
+* Adicione um evento de click ao botão limpar lista que deve receber essa função
 
 ### 6. Salvando a lista com LocalStorage
 
 *  Desenvolva uma função que deve salvar a lista quando alteramos algo nela
 *  Desenvolva uma função que deve restaurar a lista quando recarregarmos a pagina
-* A função que restaura a lista deve ser chamada dentro do window.onload
+* A função que restaura a lista deve ser chamada dentro do `window.onload`
